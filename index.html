@@ -3,55 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Çetinkaya Dizayn - Özel Mobilya Tasarımları">
-    <meta name="keywords" content="mobilya, tasarım, iç mekan, özel üretim">
+    <meta name="description" content="Çetinkaya Dizayn - Özel Mobilya Tasarımları ile yaşam alanlarınıza estetik katın.">
+    <meta name="keywords" content="mobilya, özel tasarım, iç mekan, modern mobilya, ahşap mobilya">
     <meta name="author" content="Çetinkaya Dizayn">
     <title>Çetinkaya Dizayn | Özel Mobilya Tasarımları</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100">
-    <header class="bg-white shadow-lg p-4 flex justify-between items-center">
-        <h1 class="text-2xl font-bold text-gray-800">Çetinkaya Dizayn</h1>
-        <nav>
-            <ul class="hidden md:flex space-x-4">
-                <li><a href="#" class="text-gray-600 hover:text-gray-900">Ana Sayfa</a></li>
-                <li><a href="#hakkimizda" class="text-gray-600 hover:text-gray-900">Hakkımızda</a></li>
-                <li><a href="#urunler" class="text-gray-600 hover:text-gray-900">Ürünler</a></li>
-                <li><a href="#iletisim" class="text-gray-600 hover:text-gray-900">İletişim</a></li>
-            </ul>
-        </nav>
+<body class="bg-gray-100 font-sans">
+    <!-- Header -->
+    <header class="bg-white shadow-lg p-4 sticky top-0 z-10">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-gray-800">Çetinkaya Dizayn</h1>
+            <button id="menu-toggle" class="md:hidden text-gray-600 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+            <nav id="menu" class="hidden md:flex md:items-center space-x-6">
+                <a href="#" class="text-gray-600 hover:text-gray-900 transition">Ana Sayfa</a>
+                <a href="#hakkimizda" class="text-gray-600 hover:text-gray-900 transition">Hakkımızda</a>
+                <a href="#urunler" class="text-gray-600 hover:text-gray-900 transition">Ürünler</a>
+                <a href="#iletisim" class="text-gray-600 hover:text-gray-900 transition">İletişim</a>
+            </nav>
+        </div>
     </header>
-    
+
+    <!-- Hero Section -->
     <section class="relative h-screen bg-cover bg-center" style="background-image: url('https://source.unsplash.com/1600x900/?furniture');">
         <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-            <h2 class="text-white text-4xl font-bold">Özel Tasarım Mobilyalar</h2>
+            <div class="text-center text-white">
+                <h2 class="text-4xl md:text-5xl font-bold">Özel Tasarım Mobilyalar</h2>
+                <p class="mt-4 text-lg">Yaşam alanlarınıza şıklık ve konfor katın.</p>
+                <a href="#urunler" class="mt-6 inline-block bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition">Ürünleri Gör</a>
+            </div>
         </div>
     </section>
-    
+
+    <!-- Hakkımızda -->
     <section id="hakkimizda" class="p-8 text-center">
         <h2 class="text-3xl font-bold text-gray-800">Hakkımızda</h2>
-        <p class="text-gray-600 mt-4">Özel tasarım mobilyalar ile yaşam alanlarınıza estetik ve konfor katıyoruz.</p>
+        <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Çetinkaya Dizayn olarak, özel tasarım mobilyalar ile yaşam alanlarınıza estetik ve konfor katıyoruz. Her bir ürünümüz, kalite ve zarafeti bir araya getiriyor.</p>
     </section>
-    
-    <section id="urunler" class="p-8">
+
+    <!-- Ürünler -->
+    <section id="urunler" class="p-8 bg-gray-50">
         <h2 class="text-3xl font-bold text-center text-gray-800">Ürünlerimiz</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
-            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                <img src="https://source.unsplash.com/400x300/?sofa" alt="Mobilya" class="w-full">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition">
+                <img src="https://source.unsplash.com/400x300/?sofa" alt="Modern Koltuk Takımı" class="w-full object-cover">
                 <div class="p-4">
                     <h3 class="text-xl font-semibold text-gray-800">Modern Koltuk Takımı</h3>
                     <p class="text-gray-600">Şık ve konforlu tasarım.</p>
                 </div>
             </div>
-            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                <img src="https://source.unsplash.com/400x300/?table" alt="Mobilya" class="w-full">
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition">
+                <img src="https://source.unsplash.com/400x300/?table" alt="Ahşap Yemek Masası" class="w-full object-cover">
                 <div class="p-4">
                     <h3 class="text-xl font-semibold text-gray-800">Ahşap Yemek Masası</h3>
                     <p class="text-gray-600">Doğal ve dayanıklı ahşap.</p>
                 </div>
             </div>
-            <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                <img src="https://source.unsplash.com/400x300/?chair" alt="Mobilya" class="w-full">
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition">
+                <img src="https://source.unsplash.com/400x300/?chair" alt="Ergonomik Sandalye" class="w-full object-cover">
                 <div class="p-4">
                     <h3 class="text-xl font-semibold text-gray-800">Ergonomik Sandalye</h3>
                     <p class="text-gray-600">Rahat ve estetik tasarım.</p>
@@ -59,18 +72,37 @@
             </div>
         </div>
     </section>
-    
+
+    <!-- İletişim -->
     <section id="iletisim" class="p-8 text-center">
         <h2 class="text-3xl font-bold text-gray-800">İletişim</h2>
-        <p class="text-gray-600 mt-4">Bize ulaşmak için sosyal medya hesaplarımızı ziyaret edin.</p>
-        <div class="flex justify-center mt-4 space-x-4">
-            <a href="https://instagram.com" class="text-gray-800 hover:text-gray-600">Instagram</a>
-            <a href="https://twitter.com" class="text-gray-800 hover:text-gray-600">Twitter</a>
+        <p class="text-gray-600 mt-4">Bize ulaşmak için aşağıdaki kanallardan iletişime geçebilirsiniz.</p>
+        <div class="flex justify-center mt-4 space-x-6">
+            <a href="https://instagram.com" class="text-gray-800 hover:text-blue-600 transition">Instagram</a>
+            <a href="https://twitter.com" class="text-gray-800 hover:text-blue-600 transition">Twitter</a>
         </div>
     </section>
-    
+
+    <!-- Footer -->
     <footer class="bg-gray-800 text-white text-center p-4">
-        &copy; 2025 Çetinkaya Dizayn. Tüm hakları saklıdır.
+        © 2025 Çetinkaya Dizayn. Tüm hakları saklıdır.
     </footer>
+
+    <!-- Mobil Menü için JavaScript -->
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const menu = document.getElementById('menu');
+        menuToggle.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+            menu.classList.toggle('flex');
+            menu.classList.toggle('flex-col');
+            menu.classList.toggle('absolute');
+            menu.classList.toggle('top-16');
+            menu.classList.toggle('left-0');
+            menu.classList.toggle('w-full');
+            menu.classList.toggle('bg-white');
+            menu.classList.toggle('p-4');
+        });
+    </script>
 </body>
 </html>
