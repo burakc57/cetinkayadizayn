@@ -3,89 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Çetinkaya Dizayn - Özel Mobilya Tasarımları ile yaşam alanlarınıza estetik katın.">
-    <meta name="keywords" content="mobilya, özel tasarım, iç mekan, modern mobilya, ahşap mobilya">
+    <meta name="description" content="Çetinkaya Dizayn - Özel Mobilya Tasarımları ile yaşam alanlarınıza estetik katın. Modern koltuklar, ahşap masalar ve daha fazlası.">
+    <meta name="keywords" content="mobilya, özel tasarım, iç mekan, modern mobilya, ahşap mobilya, lüks mobilya">
     <meta name="author" content="Çetinkaya Dizayn">
-    <title>Çetinkaya Dizayn | Özel Mobilya Tasarımları</title>
+    <title>Çetinkaya Dizayn | Özel Mobilya Tasarımları ve İç Mekan Çözümleri</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body class="bg-gray-100 font-sans">
     <!-- Header -->
     <header class="bg-white shadow-lg p-4 sticky top-0 z-10">
         <div class="container mx-auto flex justify-between items-center">
-            <h1 class="text-2xl font-bold text-gray-800">Çetinkaya Dizayn</h1>
+            <h1 class="text-3xl font-bold text-gray-800">Çetinkaya Dizayn</h1>
             <button id="menu-toggle" class="md:hidden text-gray-600 focus:outline-none">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
                 </svg>
             </button>
             <nav id="menu" class="hidden md:flex md:items-center space-x-6">
-                <a href="#" class="text-gray-600 hover:text-gray-900 transition">Ana Sayfa</a>
-                <a href="#hakkimizda" class="text-gray-600 hover:text-gray-900 transition">Hakkımızda</a>
-                <a href="#urunler" class="text-gray-600 hover:text-gray-900 transition">Ürünler</a>
-                <a href="#iletisim" class="text-gray-600 hover:text-gray-900 transition">İletişim</a>
+                <a href="#" class="text-gray-600 hover:text-blue-600 transition">Ana Sayfa</a>
+                <a href="#hakkimizda" class="text-gray-600 hover:text-blue-600 transition">Hakkımızda</a>
+                <a href="#urunler" class="text-gray-600 hover:text-blue-600 transition">Ürünler</a>
+                <a href="#iletisim" class="text-gray-600 hover:text-blue-600 transition">İletişim</a>
             </nav>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="relative h-screen bg-cover bg-center" style="background-image: url('https://source.unsplash.com/1600x900/?furniture');">
-        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
-            <div class="text-center text-white">
-                <h2 class="text-4xl md:text-5xl font-bold">Özel Tasarım Mobilyalar</h2>
-                <p class="mt-4 text-lg">Yaşam alanlarınıza şıklık ve konfor katın.</p>
-                <a href="#urunler" class="mt-6 inline-block bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition">Ürünleri Gör</a>
+    <section class="relative h-screen">
+        <div class="absolute inset-0">
+            <img src="https://source.unsplash.com/1600x900/?furniture" alt="Mobilya" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        </div>
+        <div class="relative z-10 flex items-center justify-center h-full">
+            <div class="text-center text-white animate__animated animate__fadeIn">
+                <h2 class="text-5xl font-bold">Özel Tasarım Mobilyalar</h2>
+                <p class="mt-4 text-xl">Yaşam alanlarınıza şıklık ve konfor katın.</p>
+                <a href="#urunler" class="mt-6 inline-block bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-blue-700 transition transform hover:scale-105">Ürünleri Gör</a>
             </div>
         </div>
     </section>
 
     <!-- Hakkımızda -->
-    <section id="hakkimizda" class="p-8 text-center">
-        <h2 class="text-3xl font-bold text-gray-800">Hakkımızda</h2>
-        <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Çetinkaya Dizayn olarak, özel tasarım mobilyalar ile yaşam alanlarınıza estetik ve konfor katıyoruz. Her bir ürünümüz, kalite ve zarafeti bir araya getiriyor.</p>
+    <section id="hakkimizda" class="p-8 text-center animate__animated animate__fadeInUp">
+        <h2 class="text-4xl font-bold text-gray-800">Hakkımızda</h2>
+        <div class="flex flex-col md:flex-row items-center justify-center mt-6">
+            <img src="https://source.unsplash.com/600x400/?interior" alt="İç Mekan" class="w-full md:w-1/2 rounded-lg shadow-lg">
+            <p class="text-gray-600 mt-4 md:mt-0 md:ml-6 max-w-lg">Çetinkaya Dizayn olarak, özel tasarım mobilyalar ile yaşam alanlarınıza estetik ve konfor katıyoruz. Kalite ve zarafeti bir araya getiren ürünlerimizle müşteri memnuniyetini ön planda tutuyoruz.</p>
+        </div>
     </section>
 
     <!-- Ürünler -->
     <section id="urunler" class="p-8 bg-gray-50">
-        <h2 class="text-3xl font-bold text-center text-gray-800">Ürünlerimiz</h2>
+        <h2 class="text-4xl font-bold text-center text-gray-800 animate__animated animate__fadeIn">Ürünlerimiz</h2>
         <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
-            <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition">
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition transform hover:scale-105 animate__animated animate__zoomIn">
                 <img src="https://source.unsplash.com/400x300/?sofa" alt="Modern Koltuk Takımı" class="w-full object-cover">
                 <div class="p-4">
-                    <h3 class="text-xl font-semibold text-gray-800">Modern Koltuk Takımı</h3>
+                    <h3 class="text-2xl font-semibold text-gray-800">Modern Koltuk Takımı</h3>
                     <p class="text-gray-600">Şık ve konforlu tasarım.</p>
+                    <a href="#" class="mt-4 inline-block text-blue-600 hover:underline">Detaylar</a>
                 </div>
             </div>
-            <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition">
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition transform hover:scale-105 animate__animated animate__zoomIn">
                 <img src="https://source.unsplash.com/400x300/?table" alt="Ahşap Yemek Masası" class="w-full object-cover">
                 <div class="p-4">
-                    <h3 class="text-xl font-semibold text-gray-800">Ahşap Yemek Masası</h3>
+                    <h3 class="text-2xl font-semibold text-gray-800">Ahşap Yemek Masası</h3>
                     <p class="text-gray-600">Doğal ve dayanıklı ahşap.</p>
+                    <a href="#" class="mt-4 inline-block text-blue-600 hover:underline">Detaylar</a>
                 </div>
             </div>
-            <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition">
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition transform hover:scale-105 animate__animated animate__zoomIn">
                 <img src="https://source.unsplash.com/400x300/?chair" alt="Ergonomik Sandalye" class="w-full object-cover">
                 <div class="p-4">
-                    <h3 class="text-xl font-semibold text-gray-800">Ergonomik Sandalye</h3>
+                    <h3 class="text-2xl font-semibold text-gray-800">Ergonomik Sandalye</h3>
                     <p class="text-gray-600">Rahat ve estetik tasarım.</p>
+                    <a href="#" class="mt-4 inline-block text-blue-600 hover:underline">Detaylar</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- İletişim -->
-    <section id="iletisim" class="p-8 text-center">
-        <h2 class="text-3xl font-bold text-gray-800">İletişim</h2>
-        <p class="text-gray-600 mt-4">Bize ulaşmak için aşağıdaki kanallardan iletişime geçebilirsiniz.</p>
-        <div class="flex justify-center mt-4 space-x-6">
+    <section id="iletisim" class="p-8 text-center animate__animated animate__fadeInUp">
+        <h2 class="text-4xl font-bold text-gray-800">İletişim</h2>
+        <p class="text-gray-600 mt-4">Bize ulaşmak için formu doldurun veya sosyal medya hesaplarımızı ziyaret edin.</p>
+        <form class="mt-6 max-w-lg mx-auto">
+            <input type="text" placeholder="Adınız" class="w-full p-3 border border-gray-300 rounded-lg mb-4">
+            <input type="email" placeholder="E-posta Adresiniz" class="w-full p-3 border border-gray-300 rounded-lg mb-4">
+            <textarea placeholder="Mesajınız" class="w-full p-3 border border-gray-300 rounded-lg mb-4"></textarea>
+            <button type="submit" class="bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-blue-700 transition">Gönder</button>
+        </form>
+        <div class="flex justify-center mt-6 space-x-6">
             <a href="https://instagram.com" class="text-gray-800 hover:text-blue-600 transition">Instagram</a>
             <a href="https://twitter.com" class="text-gray-800 hover:text-blue-600 transition">Twitter</a>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-white text-center p-4">
-        © 2025 Çetinkaya Dizayn. Tüm hakları saklıdır.
+    <footer class="bg-gray-800 text-white p-8">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-xl font-bold">Çetinkaya Dizayn</h3>
+                <p class="mt-2">Özel mobilya tasarımları ile yaşam alanlarınıza estetik katın.</p>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold">Hızlı Linkler</h3>
+                <ul class="mt-2 space-y-2">
+                    <li><a href="#" class="hover:text-blue-400 transition">Ana Sayfa</a></li>
+                    <li><a href="#hakkimizda" class="hover:text-blue-400 transition">Hakkımızda</a></li>
+                    <li><a href="#urunler" class="hover:text-blue-400 transition">Ürünler</a></li>
+                    <li><a href="#iletisim" class="hover:text-blue-400 transition">İletişim</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold">İletişim Bilgileri</h3>
+                <p class="mt-2">Adres: Örnek Mah. No:1, İstanbul</p>
+                <p>Telefon: 0212 123 45 67</p>
+                <p>E-posta: info@cetinkayadizayn.com</p>
+            </div>
+        </div>
+        <div class="text-center mt-8">
+            © 2025 Çetinkaya Dizayn. Tüm hakları saklıdır.
+        </div>
     </footer>
 
     <!-- Mobil Menü için JavaScript -->
@@ -102,6 +142,7 @@
             menu.classList.toggle('w-full');
             menu.classList.toggle('bg-white');
             menu.classList.toggle('p-4');
+            menu.classList.toggle('shadow-lg');
         });
     </script>
 </body>
