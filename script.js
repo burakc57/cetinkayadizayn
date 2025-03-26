@@ -1,4 +1,6 @@
-document.getElementById("contact-form").addEventListener("submit", function(event) {
-    event.preventDefault();
-    alert("Mesajınız başarıyla gönderildi!");
+document.addEventListener("DOMContentLoaded", function() {
+    // Sayfaya talaş tozu ekleyelim
+    let sawdust = document.createElement("div");
+    sawdust.className = "sawdust";
+    document.body.appendChild(sawdust);
 });
