@@ -3,41 +3,225 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Cetinkaya Dizayn - Özel mobilya tasarımları">
-    <meta name="keywords" content="mobilya, ahşap tasarım, özel mobilya, iç dekorasyon">
-    <meta name="author" content="Cetinkaya Dizayn">
-    <title>Çetinkaya Dizayn | Özel Mobilya Tasarımları</title>
+    <title>Çetinkaya Dizayn | Özel Mobilya Tasarım</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="logo">Çetinkaya Dizayn</div>
-        <nav>
-            <ul>
-                <li><a href="#hakkimizda">Hakkımızda</a></li>
-                <li><a href="#vitrin">Vitrin</a></li>
-                <li><a href="#iletisim">İletişim</a></li>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-overlay"></div>
+        <nav class="navbar">
+            <div class="logo">
+                <span>ÇETİNKAYA DİZAYN</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Ana Sayfa</a></li>
+                <li><a href="#about">Hakkımızda</a></li>
+                <li><a href="#products">Ürünler</a></li>
+                <li><a href="#gallery">Galeri</a></li>
+                <li><a href="#contact">İletişim</a></li>
             </ul>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
         </nav>
+        <div class="hero" id="home">
+            <h1>Özel Tasarım Mobilyalar</h1>
+            <p>Hayalinizdeki mobilyaları gerçeğe dönüştürüyoruz</p>
+            <a href="#contact" class="btn">Hemen Teklif Alın</a>
+        </div>
     </header>
-    
-    <section class="hero">
-        <h1>Özel Mobilya Tasarımları</h1>
-        <p>Ev ve ofisleriniz için estetik ve kaliteli mobilyalar</p>
-    </section>
-    
-    <section id="vitrin" class="gallery">
-        <h2>Vitrin</h2>
-        <div class="image-grid">
-            <img src="resim1.jpg" alt="Mobilya 1">
-            <img src="resim2.jpg" alt="Mobilya 2">
-            <img src="resim3.jpg" alt="Mobilya 3">
-            <img src="resim4.jpg" alt="Mobilya 4">
+
+    <!-- Hakkımızda -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <h2>Hakkımızda</h2>
+            <div class="wood-divider"></div>
+            <div class="about-content">
+                <p>Çetinkaya Dizayn olarak 15 yılı aşkın süredir Pendik'te özel tasarım mobilyalar üretiyoruz. Her bir parçaya özen ve sevgi katıyor, modern tasarımları geleneksel marangozluk teknikleriyle birleştiriyoruz.</p>
+                <div class="stats">
+                    <div class="stat-item">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span class="counter" data-target="15">0</span>
+                        <span>Yıllık Deneyim</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-home"></i>
+                        <span class="counter" data-target="500">0</span>
+                        <span>Tamamlanan Proje</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-thumbs-up"></i>
+                        <span class="counter" data-target="100">0</span>
+                        <span>Mutlu Müşteri</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
-    
-    <footer>
-        <p>&copy; 2025 Çetinkaya Dizayn | <a href="https://instagram.com/cetinkayadizayn" target="_blank">Instagram</a> | <a href="https://twitter.com/cetinkayadizayn" target="_blank">Twitter</a></p>
+
+    <!-- Ürünler -->
+    <section class="products-section" id="products">
+        <div class="container">
+            <h2>Ürünlerimiz</h2>
+            <div class="wood-divider"></div>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="wood-texture.jpg" alt="Mutfak Dolabı">
+                    </div>
+                    <div class="product-info">
+                        <h3>Mutfak Dolapları</h3>
+                        <p>Kişiye özel mutfak dolabı tasarımları</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="wood-texture.jpg" alt="Gardrop">
+                    </div>
+                    <div class="product-info">
+                        <h3>Gardıroplar</h3>
+                        <p>Şık ve fonksiyonel gardırop çözümleri</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="wood-texture.jpg" alt="TV Ünitesi">
+                    </div>
+                    <div class="product-info">
+                        <h3>TV Üniteleri</h3>
+                        <p>Modern TV ünitesi tasarımları</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="wood-texture.jpg" alt="Yemek Masası">
+                    </div>
+                    <div class="product-info">
+                        <h3>Yemek Masaları</h3>
+                        <p>Ailece keyifle kullanacağınız masalar</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeri -->
+    <section class="gallery-section" id="gallery">
+        <div class="container">
+            <h2>Galeri</h2>
+            <div class="wood-divider"></div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="wood-texture.jpg" alt="Çalışmamız 1">
+                    <div class="overlay">
+                        <h3>Özel Tasarım Mutfak</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="wood-texture.jpg" alt="Çalışmamız 2">
+                    <div class="overlay">
+                        <h3>Ahşap Gardırop</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="wood-texture.jpg" alt="Çalışmamız 3">
+                    <div class="overlay">
+                        <h3>Modern TV Ünitesi</h3>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="wood-texture.jpg" alt="Çalışmamız 4">
+                    <div class="overlay">
+                        <h3>Ahşap Yemek Masası</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- İletişim -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <h2>İletişim</h2>
+            <div class="wood-divider"></div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Bize Ulaşın</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Kavakpınar, Seçkin Sk. No 14/A, 34899 Pendik/İstanbul</p>
+                    <p><i class="fas fa-phone"></i> <a href="tel:05306883557">0530 688 35 57</a></p>
+                    <p><i class="fas fa-clock"></i> 7/24 Hizmet</p>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/cetinkayadizayn/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Teklif Alın</h3>
+                    <form id="quoteForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Adınız Soyadınız" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" placeholder="Telefon Numaranız" required>
+                        </div>
+                        <div class="form-group">
+                            <select id="productType" required>
+                                <option value="" disabled selected>Ürün Türü Seçin</option>
+                                <option value="mutfak">Mutfak Dolabı</option>
+                                <option value="gardrop">Gardırop</option>
+                                <option value="tvunitesi">TV Ünitesi</option>
+                                <option value="masa">Yemek Masası</option>
+                                <option value="diger">Diğer</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" placeholder="Özel istekleriniz..."></textarea>
+                        </div>
+                        <button type="submit" class="btn">Gönder <i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span>ÇETİNKAYA DİZAYN</span>
+                    <p>Özel Tasarım Mobilyalar</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Linkler</h4>
+                    <ul>
+                        <li><a href="#home">Ana Sayfa</a></li>
+                        <li><a href="#about">Hakkımızda</a></li>
+                        <li><a href="#products">Ürünler</a></li>
+                        <li><a href="#gallery">Galeri</a></li>
+                        <li><a href="#contact">İletişim</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>İletişim</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> Pendik, İstanbul</p>
+                    <p><i class="fas fa-phone"></i> 0530 688 35 57</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Çetinkaya Dizayn. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
