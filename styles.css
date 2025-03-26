@@ -6,8 +6,8 @@ body {
     padding: 0;
     background: url('wood-texture.jpg'); /* Ahşap doku arka plan */
     background-size: cover;
-    position: relative;
-    overflow-x: hidden;
+    background-attachment: fixed;
+    color: #3e2c1a; /* Kahverengi tonlar */
 }
 
 header {
@@ -21,51 +21,30 @@ header {
 .hero {
     text-align: center;
     padding: 100px 20px;
-    color: white;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('sawdust-bg.jpg'); /* Talaş tozu arka plan */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('sawdust-bg.jpg'); /* Talaş tozu arka plan */
     background-size: cover;
 }
 
 .hero h1 {
     font-size: 50px;
-    text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7);
-    animation: dustEffect 3s infinite alternate;
-}
-
-/* Tozlu Yazı Efekti */
-@keyframes dustEffect {
-    0% { text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.2); }
-    100% { text-shadow: 4px 4px 10px rgba(255, 255, 255, 0.5); }
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+    filter: blur(0.5px); /* Hafif toz efekti */
 }
 
 /* Talaş Tozları Efekti */
 .sawdust {
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100%;
     pointer-events: none;
     background: url('sawdust-particles.png') repeat;
-    opacity: 0.2;
+    opacity: 0.15;
     animation: floatingDust 8s infinite alternate ease-in-out;
 }
 
 @keyframes floatingDust {
     0% { transform: translateY(0); opacity: 0.1; }
-    100% { transform: translateY(-20px); opacity: 0.3; }
-}
-
-/* Çekiç Vurma Animasyonu */
-.hammer {
-    position: absolute;
-    top: -100px;
-    left: 50%;
-    width: 50px;
-    animation: hammerHit 2s infinite;
-}
-
-@keyframes hammerHit {
-    0%, 100% { transform: rotate(0deg); top: -100px; }
-    50% { transform: rotate(-20deg); top: 20px; }
+    100% { transform: translateY(-10px); opacity: 0.2; }
 }
 
 footer {
